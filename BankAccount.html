@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opening of a New Bank Account</title>
+    <style>
+        body {
+            background-color: #F7F9F9;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            color: #2C3E50;
+        }
+
+        header {
+            background-color: #FF6F61;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        header h2 {
+            margin: 0;
+            font-size: 48px;
+        }
+
+        main {
+            text-align: center;
+            padding: 20px;
+        }
+
+        table {
+            margin: 20px auto;
+            width: 80%;
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            border: 1px solid #BDC3C7;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #2C3E50;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #E1E8EB;
+        }
+
+        input[type="text"], input[type="number"], input[type="file"], input[type="submit"] {
+            padding: 10px;
+            margin: 10px 0;
+            width: 80%;
+            max-width: 300px;
+            border: 1px solid #BDC3C7;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #FF6F61;
+            color: white;
+            cursor: pointer;
+            border: none;
+            padding: 15px 20px;
+            border-radius: 5px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #D44D3E;
+        }
+
+        p {
+            background-color: #F8C471;
+            padding: 5px;
+            margin: 0;
+        }
+
+        footer {
+            background-color: #2C3E50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .topnav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            background-color: #2C3E50;
+            border-radius: 5px;
+            margin: 5px;
+            display: inline-block;
+        }
+
+        .topnav a:hover {
+            background-color: #1B2A37;
+        }
+
+        marquee {
+            color: #FF6F61;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h2><img src="___UNITYBank.jpg___" height="110px" alt="UNITY Bank"> UNITY Bank</h2>
+</header>
+
+<main>
+    <h1>Registered Bank Account Holders</h1>
+
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Date of Birth</th>
+            <th>Address</th>
+            <th>Aadhar No.</th>
+            <th>Mobile No.</th>
+        </tr>
+        <tr>
+            <td>KUNAL</td>
+            <td>12th Oct, 2001</td>
+            <td>Delhi NCR</td>
+            <td>953*******</td>
+            <td>9869458784154</td>
+        </tr>
+        <tr>
+            <td>HARRY</td>
+            <td>15th Dec, 1980</td>
+            <td>LUCKNOW</td>
+            <td>925*******</td>
+            <td>9526489451584</td>
+        </tr>
+        <tr>
+            <td>RAHUL</td>
+            <td>1st Sept, 2003</td>
+            <td>RAIPUR</td>
+            <td>685*******</td>
+            <td>912625451545</td>
+        </tr>
+        <tr>
+            <td>HEMANT</td>
+            <td>1st May, 1998</td>
+            <td>PRAYAGRAJ</td>
+            <td>526*******</td>
+            <td>8475614564510</td>
+        </tr>
+    </table>
+
+    <h1>New Account Registration Form</h1>
+
+    <p><b>Personal Information</b></p>
+    <form action="#">
+        <table>
+            <tr>
+                <td>Name:</td>
+                <td><input type="text" placeholder="Name"></td>
+            </tr>
+            <tr>
+                <td>Name of Father/Husband/Guardian:</td>
+                <td><input type="text" placeholder="Name"></td>
+            </tr>
+            <tr>
+                <td>Date of Birth:</td>
+                <td><input type="text" placeholder="DOB"></td>
+            </tr>
+            <tr>
+                <td>Gender:</td>
+                <td>
+                    <input type="radio" name="gender"> Male
+                    <input type="radio" name="gender"> Female
+                    <input type="radio" name="gender"> Other
+                </td>
+            </tr>
+            <tr>
+                <td>Nationality:</td>
+                <td><input type="text" placeholder="Nationality"></td>
+            </tr>
+            <tr>
+                <td>Aadhar Number:</td>
+                <td><input type="number" placeholder="Aadhar Number"></td>
+            </tr>
+        </table>
+
+        <p><b>Address</b></p>
+        <table>
+            <tr>
+                <td>Landmark/Street:</td>
+                <td><input type="text" placeholder="Landmark"></td>
+            </tr>
+            <tr>
+                <td>City:</td>
+                <td><input type="text" placeholder="City"></td>
+            </tr>
+            <tr>
+                <td>State:</td>
+                <td><input type="text" placeholder="State"></td>
+            </tr>
+            <tr>
+                <td>Telephone No:</td>
+                <td><input type="number" placeholder="Telephone No"></td>
+            </tr>
+            <tr>
+                <td>Mobile No:</td>
+                <td><input type="number" placeholder="Mobile No"></td>
+            </tr>
+        </table>
+
+        <p><b>Type of Account</b></p>
+        <input type="radio" name="account-type"> Saving Account<br>
+        <input type="radio" name="account-type"> Current Account<br><br>
+
+        <label>Signature:</label><input type="file"><br><br>
+        <label>Passport Photo:</label><input type="file"><br><br>
+
+        <input type="submit" value="Register">
+    </form>
+
+    <marquee>Thanks for visiting 🙏</marquee>
+</main>
+
+<footer>
+    <p>For more info visit</p>
+    <div class="topnav">
+        <a href="#">UNITY Bank</a>
+    </div>
+</footer>
+
+</body>
+</html>
