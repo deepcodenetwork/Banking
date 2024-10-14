@@ -8,7 +8,6 @@
         body {
             background-color: #F7F9F9;
             font-family: Arial, sans-serif;
-            margin: 0;
             color: #2C3E50;
         }
 
@@ -20,7 +19,6 @@
         }
 
         header h2 {
-            margin: 0;
             font-size: 48px;
         }
 
@@ -32,14 +30,10 @@
         table {
             margin: 20px auto;
             width: 80%;
-            border-collapse: collapse;
         }
 
         table, th, td {
             border: 1px solid #BDC3C7;
-        }
-
-        th, td {
             padding: 10px;
             text-align: left;
         }
@@ -49,11 +43,7 @@
             color: white;
         }
 
-        tr:nth-child(even) {
-            background-color: #E1E8EB;
-        }
-
-        input[type="text"], input[type="number"], input[type="file"], input[type="submit"] {
+        input[type="text"], input[type="number"], input[type="file"], input[type="submit"] {    /*IMP*/
             padding: 10px;
             margin: 10px 0;
             width: 80%;
@@ -62,17 +52,13 @@
             border-radius: 5px;
         }
 
-        input[type="submit"] {
+        input[type="submit"] {                            /*IMP*/
             background-color: #FF6F61;
             color: white;
             cursor: pointer;
             border: none;
             padding: 15px 20px;
             border-radius: 5px;
-        }
-
-        input[type="submit"]:hover {
-            background-color: #D44D3E;
         }
 
         p {
@@ -88,20 +74,6 @@
             padding: 10px;
         }
 
-        .topnav a {
-            color: white;
-            text-decoration: none;
-            padding: 10px;
-            background-color: #2C3E50;
-            border-radius: 5px;
-            margin: 5px;
-            display: inline-block;
-        }
-
-        .topnav a:hover {
-            background-color: #1B2A37;
-        }
-
         marquee {
             color: #FF6F61;
         }
@@ -110,7 +82,7 @@
 <body>
 
 <header>
-    <h2><img src="___UNITYBank.jpg___" height="110px" alt="UNITY Bank"> UNITY Bank</h2>
+    <h2><img src="UNITYBank.png" height="110px" alt="UNITY Bank"> UNITY Bank</h2>
 </header>
 
 <main>
@@ -132,7 +104,7 @@
             <td>9869458784154</td>
         </tr>
         <tr>
-            <td>HARRY</td>
+            <td>HARI</td>
             <td>15th Dec, 1980</td>
             <td>LUCKNOW</td>
             <td>925*******</td>
@@ -157,7 +129,7 @@
     <h1>New Account Registration Form</h1>
 
     <p><b>Personal Information</b></p>
-    <form action="#">
+    <form >
         <table>
             <tr>
                 <td>Name:</td>
@@ -174,9 +146,9 @@
             <tr>
                 <td>Gender:</td>
                 <td>
-                    <input type="radio" name="gender"> Male
-                    <input type="radio" name="gender"> Female
-                    <input type="radio" name="gender"> Other
+                    <input type="radio" name="gender"> Male</input>
+                    <input type="radio" name="gender"> Female</input>
+                    <input type="radio" name="gender"> Other</input>
                 </td>
             </tr>
             <tr>
@@ -217,20 +189,17 @@
         <input type="radio" name="account-type"> Saving Account<br>
         <input type="radio" name="account-type"> Current Account<br><br>
 
-        <label>Signature:</label><input type="file"><br><br>
-        <label>Passport Photo:</label><input type="file"><br><br>
+        <label>Signature:</label><input type="file"></input><br><br>
+        <label>Passport Photo:</label><input type="file"></input><br><br>
 
-        <input type="submit" value="Register">
+        <input type="submit" value="Register"></input>
     </form>
 
     <marquee>Thanks for visiting 🙏</marquee>
 </main>
 
 <footer>
-    <p>For more info visit</p>
-    <div class="topnav">
-        <a href="#">UNITY Bank</a>
-    </div>
+    <p>For more info visit  <a href="#">UNITY Bank</a></p>
 </footer>
 
 </body>
